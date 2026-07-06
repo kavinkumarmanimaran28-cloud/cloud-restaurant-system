@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.68)),
+    url("../images/register-bg.jpeg") center/cover no-repeat;
+}
+
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 70px;
+}
+
+.brand-section {
+  width: 50%;
+  color: white;
+}
+
+.brand-section h1 {
+  font-size: 56px;
+  color: #f59e0b;
+}
+
+.brand-section p {
+  font-size: 22px;
+  margin-top: 15px;
+}
+
+.form-section {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.register-card {
+  width: 390px;
+  padding: 38px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.13);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255,255,255,0.25);
+  box-shadow: 0 8px 35px rgba(0,0,0,0.45);
+  color: white;
+}
+
+.register-card h2 {
+  font-size: 34px;
+}
+
+.subtitle {
+  color: #e5e5e5;
+  margin: 8px 0 25px;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 16px;
+  border: 1px solid rgba(255,255,255,0.35);
+  border-radius: 12px;
+  outline: none;
+  background: rgba(255,255,255,0.9);
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  background: #f59e0b;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #d97706;
+}
+
+#message {
+  margin-top: 15px;
+  color: #00ff7b;
+}
+
+.link-text {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.link-text a {
+  color: #fbbf24;
+  text-decoration: none;
+}

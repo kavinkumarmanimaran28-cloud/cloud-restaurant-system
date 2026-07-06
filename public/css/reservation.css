@@ -1,0 +1,54 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial,sans-serif;
+}
+
+body{
+  min-height:100vh;
+  background:
+  linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.75)),
+  url("../images/reservation-bg.jpg") center/cover no-repeat;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.reservation-card{
+  width:450px;
+  padding:40px;
+  background:rgba(255,255,255,.12);
+  backdrop-filter:blur(18px);
+  border-radius:25px;
+  border:1px solid rgba(255,255,255,.2);
+  color:white;
+}
+
+h1{
+  text-align:center;
+  margin-bottom:25px;
+  color:#FFD700;
+}
+
+input,
+select{
+  width:100%;
+  padding:15px;
+  margin-bottom:18px;
+  border:none;
+  outline:none;
+  border-radius:12px;
+  background:rgba(255,255,255,.85);
+  font-size:16px;
+}
+
+button{
+  width:100%;
+  padding:15px;
+  border:none;
+  border-radius:12px;
+  background:#00C853;
+  color:white;
+  font-size:17px;
+}

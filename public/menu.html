@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Menu | Cloud Restaurant</title>
+  <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <h2>Cloud Restaurant</h2>
+
+  <div>
+    <a href="menu.html">🍽 Menu</a>
+    <a href="orders.html">📜 Orders</a>
+    <a href="reviews.html">⭐ Reviews</a>
+    <a href="contact.html">📞 Contact</a>
+    <a href="profile.html">👤 Profile</a>
+    <a href="admin.html">⚙ Admin</a>
+    <a href="cart.html">🛒 Cart (<span id="cartCount">0</span>)</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <h1>Explore Our Menu</h1>
+  <p>Fresh Food • Easy Ordering • Fast Delivery</p>
+
+  <input
+    type="text"
+    id="searchInput"
+    placeholder="Search food eg: chicken, rice, juice..."
+    onkeyup="searchFood()"
+  >
+
+  <div class="category-buttons">
+    <button onclick="loadFoods()">All</button>
+    <button onclick="loadByCategory(1)">Veg</button>
+    <button onclick="loadByCategory(2)">Non-Veg</button>
+    <button onclick="loadByCategory(3)">Drinks</button>
+    <button onclick="loadByCategory(4)">Desserts</button>
+    <button onclick="loadByCategory(5)">Starters</button>
+  </div>
+</section>
+
+<div class="container" id="menuContainer"></div>
+
+<footer>
+  <p>© 2026 Cloud Restaurant | Powered by Team KJH</p>
+</footer>
+
+<script src="js/menu.js"></script>
+</body>
+</html>

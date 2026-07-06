@@ -1,0 +1,50 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial,sans-serif;
+}
+
+body{
+  min-height:100vh;
+  background:
+  linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.85)),
+  url("../images/payment-bg.jpg") center/cover no-repeat;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:white;
+}
+
+.success-card{
+  width:460px;
+  padding:40px;
+  text-align:center;
+  background:rgba(255,255,255,.12);
+  backdrop-filter:blur(18px);
+  border-radius:25px;
+  border:1px solid rgba(255,255,255,.25);
+  box-shadow:0 8px 32px rgba(0,0,0,.5);
+}
+
+.success-card h1{
+  color:#00ff6a;
+  margin-bottom:25px;
+  font-size:32px;
+}
+
+#details{
+  text-align:left;
+  line-height:1.8;
+  margin:25px 0;
+}
+
+a{
+  display:inline-block;
+  margin-top:15px;
+  padding:13px 25px;
+  background:#00c853;
+  color:white;
+  text-decoration:none;
+  border-radius:10px;
+}

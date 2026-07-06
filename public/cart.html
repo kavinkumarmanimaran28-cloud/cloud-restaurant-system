@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cart | Cloud Restaurant</title>
+  <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <h2>Cloud Restaurant</h2>
+
+  <div>
+    <a href="menu.html">🍽 Menu</a>
+    <a href="orders.html">📜 Orders</a>
+    <a href="reviews.html">⭐ Reviews</a>
+    <a href="contact.html">📞 Contact</a>
+    <a href="profile.html">👤 Profile</a>
+    <a href="admin.html">⚙ Admin</a>
+    <a href="cart.html">🛒 Cart</a>
+  </div>
+</nav>
+
+<section class="cart-section">
+  <h1>Your Cart</h1>
+
+  <div id="cartContainer"></div>
+
+  <div class="summary">
+    <div class="coupon-box">
+      <input type="text" id="couponCode" placeholder="Enter coupon code">
+      <button onclick="applyCoupon()">Apply Coupon</button>
+      <p id="couponMessage"></p>
+    </div>
+
+    <h3>Subtotal: ₹<span id="subTotalAmount">0</span></h3>
+    <h3>Discount: ₹<span id="discountAmount">0</span></h3>
+    <h2>Total: ₹<span id="totalAmount">0</span></h2>
+
+    <button onclick="clearCart()" class="clear-btn">Clear Cart</button>
+    <button onclick="checkout()" class="checkout-btn">Checkout</button>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Cloud Restaurant | Powered by Team KJH</p>
+</footer>
+
+<script src="js/cart.js"></script>
+</body>
+</html>

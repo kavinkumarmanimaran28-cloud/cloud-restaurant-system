@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Dashboard | Cloud Restaurant</title>
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <h2>Cloud Restaurant</h2>
+
+  <div>
+    <a href="menu.html">🍽 Menu</a>
+    <a href="orders.html">📜 Orders</a>
+    <a href="reviews.html">⭐ Reviews</a>
+    <a href="contact.html">📞 Contact</a>
+    <a href="profile.html">👤 Profile</a>
+    <a href="admin.html">⚙ Admin</a>
+    <a href="cart.html">🛒 Cart</a>
+    <a href="#" onclick="logout()">🚪 Logout</a>
+  </div>
+</nav>
+
+<section class="dashboard">
+  <h1>Admin Dashboard</h1>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Total Users</h3>
+      <p id="totalUsers">0</p>
+    </div>
+
+    <div class="card">
+      <h3>Total Orders</h3>
+      <p id="totalOrders">0</p>
+    </div>
+
+    <div class="card">
+      <h3>Total Revenue</h3>
+      <p>₹<span id="totalRevenue">0</span></p>
+    </div>
+
+    <div class="card">
+      <h3>Total Reviews</h3>
+      <p id="totalReviews">0</p>
+    </div>
+  </div>
+
+  <h2 class="section-title">Analytics</h2>
+
+  <div class="chart-grid">
+    <div class="chart-card">
+      <h3>Revenue Overview</h3>
+      <canvas id="revenueChart"></canvas>
+    </div>
+
+    <div class="chart-card">
+      <h3>Payment Methods</h3>
+      <canvas id="paymentChart"></canvas>
+    </div>
+  </div>
+
+  <h2 class="section-title">Recent Orders</h2>
+  <div id="recentOrders"></div>
+
+  <h2 class="section-title">Customer Messages</h2>
+  <div id="contactMessages"></div>
+</section>
+
+<footer>
+  <p>© 2026 Cloud Restaurant | Powered by Team KJH</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

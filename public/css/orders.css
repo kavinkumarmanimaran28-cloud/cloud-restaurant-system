@@ -1,0 +1,86 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial,sans-serif;
+}
+
+body{
+  min-height:100vh;
+  background:
+  linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.85)),
+  url("../images/menu-bg.jpg") center/cover fixed no-repeat;
+  color:white;
+}
+
+.navbar{
+  background:rgba(0,0,0,.8);
+  padding:18px 45px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+.navbar h2{
+  color:#00c853;
+  font-size:28px;
+}
+
+.navbar a{
+  color:white;
+  text-decoration:none;
+  margin-left:20px;
+  font-weight:bold;
+  transition:.3s;
+}
+
+.navbar a:hover{
+  color:#FFD700;
+}
+
+.orders-section{
+  padding:40px;
+}
+
+.orders-section h1{
+  text-align:center;
+  font-size:42px;
+  margin-bottom:35px;
+}
+
+.order-card{
+  width:700px;
+  max-width:95%;
+  margin:18px auto;
+  padding:22px;
+  border-radius:18px;
+  background:rgba(255,255,255,.12);
+  backdrop-filter:blur(16px);
+  border:1px solid rgba(255,255,255,.25);
+}
+
+.order-card h2{
+  color:#00ff6a;
+  margin-bottom:12px;
+}
+
+.order-card p{
+  line-height:1.8;
+}
+
+.empty{
+  text-align:center;
+  font-size:25px;
+  margin-top:50px;
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+  background:rgba(0,0,0,.8);
+  color:white;
+  margin-top:50px;
+}

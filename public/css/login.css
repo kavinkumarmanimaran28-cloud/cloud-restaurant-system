@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.65)),
+    url("../images/login-bg.jpeg") center/cover no-repeat;
+}
+
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 70px;
+}
+
+.brand-section {
+  width: 50%;
+  color: white;
+}
+
+.brand-section h1 {
+  font-size: 58px;
+  color: #00c853;
+}
+
+.brand-section p {
+  font-size: 22px;
+  margin-top: 15px;
+}
+
+.form-section {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.login-card {
+  width: 380px;
+  padding: 38px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.13);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255,255,255,0.25);
+  box-shadow: 0 8px 35px rgba(0,0,0,0.45);
+  color: white;
+}
+
+.login-card h2 {
+  font-size: 34px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #e5e5e5;
+  margin-bottom: 25px;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 18px;
+  border: 1px solid rgba(255,255,255,0.35);
+  border-radius: 12px;
+  outline: none;
+  background: rgba(255,255,255,0.9);
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  background: #00c853;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #009624;
+}
+
+#message {
+  margin-top: 15px;
+  color: #ffd54f;
+}
+
+.link-text {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.link-text a {
+  color: #00ff7b;
+  text-decoration: none;
+}

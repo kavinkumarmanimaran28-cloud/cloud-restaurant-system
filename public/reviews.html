@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reviews | Cloud Restaurant</title>
+  <link rel="stylesheet" href="css/reviews.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <h2>Cloud Restaurant</h2>
+
+  <div>
+    <a href="menu.html">🍽 Menu</a>
+    <a href="orders.html">📜 Orders</a>
+    <a href="reviews.html">⭐ Reviews</a>
+    <a href="contact.html">📞 Contact</a>
+    <a href="profile.html">👤 Profile</a>
+    <a href="admin.html">⚙ Admin</a>
+    <a href="cart.html">🛒 Cart</a>
+  </div>
+</nav>
+
+<section class="review-section">
+  <div class="review-card">
+    <h1>Customer Review</h1>
+
+    <form id="reviewForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="text" id="foodName" placeholder="Food Name" required>
+
+      <select id="rating" required>
+        <option value="">Select Rating</option>
+        <option value="5">⭐⭐⭐⭐⭐ Excellent</option>
+        <option value="4">⭐⭐⭐⭐ Good</option>
+        <option value="3">⭐⭐⭐ Average</option>
+        <option value="2">⭐⭐ Poor</option>
+        <option value="1">⭐ Bad</option>
+      </select>
+
+      <textarea id="comment" placeholder="Write your review..." required></textarea>
+
+      <button type="submit">Submit Review</button>
+    </form>
+  </div>
+
+  <h2 class="title">Recent Reviews</h2>
+  <div id="reviewsContainer"></div>
+</section>
+
+<script src="js/reviews.js"></script>
+<footer>
+  <p>
+    © 2026 Cloud Restaurant | Powered by Team KJH
+  </p>
+</footer>
+</body>
+</html>
